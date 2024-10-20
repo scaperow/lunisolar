@@ -94,14 +94,14 @@ export class Lunar {
     const day = getDateData(_date, 'Date', isUTC)
     const date = parseDate(`${year}/${month + 1}/${day}`)
 
-    // 計算年份
-    if (
-      year < FIRST_YEAR ||
-      year > LAST_YEAR ||
-      (year === FIRST_YEAR && month < 1)
-    ) {
-      throw new Error('Invalid lunar year: out of range')
-    }
+    // // 計算年份
+    // if (
+    //   year < FIRST_YEAR ||
+    //   year > LAST_YEAR ||
+    //   (year === FIRST_YEAR && month < 1)
+    // ) {
+    //   throw new Error('Invalid lunar year: out of range')
+    // }
 
     let dateDiff = getDateDiff(getLunarNewYearDay(year), date)
     if (date && hours === 23) dateDiff += 1

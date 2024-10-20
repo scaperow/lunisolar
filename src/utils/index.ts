@@ -126,9 +126,9 @@ export const parseFromLunar = function (lunarData: ParseFromLunarParam, lang?: s
     isLeapMonth = true
   }
   // 計算年份
-  if (year < FIRST_YEAR || year > LAST_YEAR) {
-    throw new Error('Invalid lunar year: out of range')
-  }
+  // if (year < FIRST_YEAR || year > LAST_YEAR) {
+  //   throw new Error('Invalid lunar year: out of range')
+  // }
   if (month < 1) {
     throw new Error('Invalid lunar month')
   }

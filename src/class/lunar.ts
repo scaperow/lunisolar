@@ -98,8 +98,7 @@ export class Lunar {
     if (
       year < FIRST_YEAR ||
       year > LAST_YEAR ||
-      (year === FIRST_YEAR && month < 1) ||
-      (year === FIRST_YEAR && month === 1 && date.getDate() < 19)
+      (year === FIRST_YEAR && month < 1)
     ) {
       throw new Error('Invalid lunar year: out of range')
     }
